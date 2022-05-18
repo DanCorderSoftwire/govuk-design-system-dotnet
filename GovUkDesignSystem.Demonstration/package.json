@@ -1,0 +1,21 @@
+{
+  "name": "govukdesignsystem.demonstration",
+  "version": "1.0.0",
+  "description": "Site to demonstrate how to use the GovUkDesignSystem library",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "sass Sass:wwwroot/assets/css",
+    "update-govuk-images": "shx cp -r ./node_modules/govuk-frontend/govuk/assets/images/ ./wwwroot/assets/images/",
+    "update-govuk-fonts": "shx cp -r ./node_modules/govuk-frontend/govuk/assets/fonts/ ./wwwroot/assets/fonts/",
+    "update-govuk-js": "shx cp -r ./node_modules/govuk-frontend/govuk/all.js ./wwwroot/assets/js/all.js && shx cp -r ./node_modules/html5shiv/dist/html5shiv.js ./wwwroot/assets/js/html5shiv.js",
+    "update-govuk-assets": "npm run update-govuk-images && npm run update-govuk-fonts && npm run update-govuk-js"
+  },
+  "author": "",
+  "private": true,
+  "devDependencies": {
+    "govuk-frontend": "^4.1.0",
+    "html5shiv": "^3.7.3",
+    "sass": "^1.51.0",
+    "shx": "^0.3.4"
+  }
+}
