@@ -1,0 +1,19 @@
+﻿@using GovUkDesignSystem
+@using GovUkDesignSystem.GovUkDesignSystemComponents
+@model GovUkDesignSystem.Demonstration.Models.TextInputViewModel
+@{
+    ViewData["Title"] = "Text Input";
+}
+
+<div class="text-center">
+    @await Html.GovUkTextInputFor(
+        m => m.Text,
+        new LabelViewModel
+        {
+            Text = "This is a label"
+        },
+        new HintViewModel
+        {
+            Text = "This is a hint"
+        })
+</div>
