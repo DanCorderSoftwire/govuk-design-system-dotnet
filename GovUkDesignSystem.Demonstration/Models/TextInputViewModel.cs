@@ -1,6 +1,9 @@
-﻿namespace GovUkDesignSystem.Demonstration.Models;
+﻿using GovUkDesignSystem.Attributes.ValidationAttributes;
+
+namespace GovUkDesignSystem.Demonstration.Models;
 
 public class TextInputViewModel
 {
-    public string Text { get; set; } = "Some text";
+    [GovUkValidateRequiredAttribute(ErrorMessageIfMissing = "Please enter some text")]
+    public string Text { get; set; } = "";
 }
