@@ -31,6 +31,8 @@ This library can be used in two ways:
 
 These features are interoperable and you can use as much or as little of them as you like in your project - it's not necessary to migrate totally to using this library.
 
+For examples of how to use the controls please take a look at the `GovUkDesignSystem.Demonstration` project.
+
 
 ### View components
 
@@ -172,3 +174,7 @@ The project contains 3 general folders:
 We use Approval tests (https://approvaltests.com/) to ensure HTML components are rendered properly.
 
 After writing a test and running it, a Winmerge window will open with the test result on the left, and the expected value on the right. Edit the file to the right to represent what the test outcome should be (in the case of newly added components, for example, copying the contents of the left file) and save the changes.
+
+### Demo project
+
+When adding new components please add a page to showcase them to the `GovUkDesignSystem.Demonstration` project.
