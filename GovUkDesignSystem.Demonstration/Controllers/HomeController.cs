@@ -15,12 +15,24 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View();
+        return View("Index");
     }
-    
+
+    [HttpGet]
     public IActionResult TextInput()
     {
         return View(new TextInputViewModel());
+    }
+
+    [HttpPost]
+    public IActionResult TextInput(TextInputViewModel viewModel)
+    {
+        if (!ModelState.IsValid)
+        {
+            return TextInput();
+        }
+
+        return Index();
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -1,0 +1,12 @@
+﻿@using GovUkDesignSystem
+
+@{
+    Layout = "_GovUkLayout";
+}
+
+@await Html.GovUkErrorSummary(ViewData.ModelState)
+
+<form method="post">
+    @RenderBody()
+    <input type="submit" />
+</form>
