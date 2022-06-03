@@ -4,7 +4,7 @@
   "description": "Site to demonstrate how to use the GovUkDesignSystem library",
   "main": "index.js",
   "scripts": {
-    "build:css": "sass Sass:wwwroot/assets/css",
+    "build:css": "sass Sass:wwwroot/assets/css --load-path=node_modules/govuk-frontend --quiet-deps",
     "update-govuk-images": "shx cp -r ./node_modules/govuk-frontend/govuk/assets/images/ ./wwwroot/assets/images/",
     "update-govuk-fonts": "shx cp -r ./node_modules/govuk-frontend/govuk/assets/fonts/ ./wwwroot/assets/fonts/",
     "update-govuk-js": "shx cp -r ./node_modules/govuk-frontend/govuk/all.js ./wwwroot/assets/js/all.js && shx cp -r ./node_modules/html5shiv/dist/html5shiv.js ./wwwroot/assets/js/html5shiv.js",
