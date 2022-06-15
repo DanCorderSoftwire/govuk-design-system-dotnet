@@ -1,4 +1,5 @@
 ﻿@using GovUkDesignSystem
+@using GovUkDesignSystem.GovUkDesignSystemComponents
 
 @{
     Layout = "_GovUkLayout";
@@ -8,5 +9,9 @@
 
 <form method="post">
     @RenderBody()
-    <input type="submit" />
+    
+    @await Html.GovUkButton(new ButtonViewModel
+    {
+        Text = "Submit"
+    })
 </form>
