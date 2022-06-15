@@ -23,6 +23,12 @@ public class HomeController : Controller
     {
         return View();
     }
+    
+    [HttpGet]
+    public IActionResult BackLink()
+    {
+        return View();
+    }
 
     [HttpGet]
     public IActionResult TextInput()
