@@ -29,6 +29,12 @@ public class HomeController : Controller
     {
         return View();
     }
+    
+    [HttpGet]
+    public IActionResult Breadcrumbs()
+    {
+        return View();
+    }
 
     [HttpGet]
     public IActionResult TextInput()

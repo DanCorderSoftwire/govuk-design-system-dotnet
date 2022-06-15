@@ -1,0 +1,15 @@
+﻿@using GovUkDesignSystem
+@using GovUkDesignSystem.GovUkDesignSystemComponents
+@{
+    ViewData["Title"] = "Breadcrumbs";
+}
+
+@await Html.GovUkBreadcrumbs(new BreadcrumbsViewModel
+{
+    Crumbs = new List<CrumbViewModel>
+    {
+        new() { Text = "1st: not a link"},
+        new() { Href = "/", Text = "2nd: a link"}
+    }
+})
+
