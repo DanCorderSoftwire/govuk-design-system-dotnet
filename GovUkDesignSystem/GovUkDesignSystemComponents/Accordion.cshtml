@@ -19,7 +19,7 @@
                         <span class="govuk-accordion__section-button" id="@($"{Model.Id}-heading-{SectionIndex}")">
                             @{ await Html.RenderPartialAsync("/GovUkDesignSystemComponents/SubComponents/HtmlText.cshtml", section.Heading); }
                         </span>
-                    </@(Model.HeadingLevel)>
+                    <@("/" + Model.HeadingLevel)>
                 </div>
                 @if (section.Summary != null)
                 {

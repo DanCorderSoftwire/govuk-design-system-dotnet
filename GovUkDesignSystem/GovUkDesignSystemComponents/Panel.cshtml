@@ -7,7 +7,7 @@
         @{
             await Html.RenderPartialAsync("/GovUkDesignSystemComponents/SubComponents/HtmlText.cshtml", new HtmlText(Model.TitleHtml, Model.TitleText));
         }
-    </@(Model.HeadingLevel)>
+    <@("/" + Model.HeadingLevel)>
     <div class="govuk-panel__body">
         @{
             await Html.RenderPartialAsync("/GovUkDesignSystemComponents/SubComponents/HtmlText.cshtml", Model);
