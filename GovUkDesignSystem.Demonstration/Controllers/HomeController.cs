@@ -17,6 +17,12 @@ public class HomeController : Controller
     {
         return View("Index");
     }
+    
+    [HttpGet]
+    public IActionResult Accordion()
+    {
+        return View();
+    }
 
     [HttpGet]
     public IActionResult TextInput()

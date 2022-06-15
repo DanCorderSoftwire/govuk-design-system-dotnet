@@ -1,0 +1,42 @@
+﻿@using GovUkDesignSystem
+@using GovUkDesignSystem.GovUkDesignSystemComponents
+@{
+    ViewData["Title"] = "Accordion";
+}
+
+@await Html.GovUkAccordion(new AccordionViewModel
+{
+    Sections = new List<AccordionSectionViewModel>() {
+        new ()
+        {
+            Heading = new AccordionSectionItemViewModel
+            {
+                Text = "This is the first heading"
+            },
+            Summary = new AccordionSectionItemViewModel
+            {
+                Text = "This is the first summary"
+            },
+            Content = new AccordionSectionItemViewModel
+            {
+                Html = @<p class='govuk-body'>This is the first content.</p>
+            }
+        },
+        new ()
+        {
+            Heading = new AccordionSectionItemViewModel
+            {
+                Text = "This is the second heading"
+            },
+            Summary = new AccordionSectionItemViewModel
+            {
+                Text = "This is the second summary"
+            },
+            Content = new AccordionSectionItemViewModel
+            {
+                Html = @<p class='govuk-body'>This is the second content.</p>
+            }
+        }
+    }
+})
+
