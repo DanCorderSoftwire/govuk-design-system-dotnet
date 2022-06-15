@@ -35,6 +35,12 @@ public class HomeController : Controller
     {
         return View();
     }
+    
+    [HttpGet]
+    public IActionResult Button()
+    {
+        return View();
+    }
 
     [HttpGet]
     public IActionResult TextInput()

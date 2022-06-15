@@ -1,0 +1,35 @@
+﻿@using GovUkDesignSystem
+@using GovUkDesignSystem.GovUkDesignSystemComponents
+@{
+    ViewData["Title"] = "Button";
+}
+
+@await Html.GovUkButton(new ButtonViewModel
+{
+    Text = "Default button"
+})
+<br/>
+@await Html.GovUkButton(new ButtonViewModel
+{
+    IsStartButton = true,
+    Text = "Start button"
+})
+<br/>
+@await Html.GovUkButton(new ButtonViewModel
+{
+    Disabled = true,
+    Text = "Disabled button"
+})
+<br/>
+@await Html.GovUkButton(new ButtonViewModel
+{
+    Element = "input",
+    Text = "Input button"
+})
+<br/>
+@await Html.GovUkButton(new ButtonViewModel
+{
+    Href = "/",
+    Text = "Link button"
+})
+
