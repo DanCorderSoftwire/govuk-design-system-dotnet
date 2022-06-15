@@ -21,11 +21,11 @@ public class HomeController : Controller
     [HttpGet]
     public IActionResult TextInput()
     {
-        return View(new TextInputViewModel());
+        return View(new TextInputDemoViewModel());
     }
 
     [HttpPost]
-    public IActionResult TextInput(TextInputViewModel viewModel)
+    public IActionResult TextInput(TextInputDemoViewModel demoViewModel)
     {
         if (!ModelState.IsValid)
         {

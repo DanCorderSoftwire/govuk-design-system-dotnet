@@ -2,7 +2,7 @@
 
 namespace GovUkDesignSystem.Demonstration.Models;
 
-public class TextInputViewModel
+public class TextInputDemoViewModel
 {
     [GovUkValidateRequired(ErrorMessageIfMissing = "Enter some text")]
     public string Text { get; set; } = "";

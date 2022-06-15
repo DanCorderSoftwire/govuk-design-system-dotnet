@@ -1,12 +1,11 @@
 ﻿@using GovUkDesignSystem
 @using GovUkDesignSystem.GovUkDesignSystemComponents
-@model GovUkDesignSystem.Demonstration.Models.TextInputViewModel
+@model GovUkDesignSystem.Demonstration.Models.TextInputDemoViewModel
 @{
     ViewData["Title"] = "Text Input";
     Layout = "_GovUkForm";
 }
 
-<div class="text-center">
     @await Html.GovUkTextInputFor(
         m => m.Text,
         new LabelViewModel
@@ -17,4 +16,3 @@
         {
             Text = "This is a hint"
         })
-</div>
